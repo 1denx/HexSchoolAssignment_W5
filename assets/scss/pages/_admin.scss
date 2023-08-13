@@ -1,0 +1,48 @@
+.id-icon {
+    color: $success;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+    cursor: pointer;
+
+    &:hover {
+        color: $success;
+    }
+}
+
+.modal-pic {
+    width: 141px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.user-name {
+    font-size: 24px;
+}
+
+.user-email {
+    font-size: $font-size-sm;
+    color: $gray-600;
+}
+
+.verified-date {
+    font-size: $font-size-sm;
+    margin-bottom: 18px;
+}
+
+.block-title {
+    border-top: 1px solid $gray-400;
+}
+
+.alert-title {
+    margin-bottom: 18px;
+}
+
+.footer-btn,
+.alert-area {
+    .btn {
+        border-radius: $border-radius-xs;
+    }
+}

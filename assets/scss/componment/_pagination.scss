@@ -1,0 +1,20 @@
+.page-item {
+    --bs-pagination-color: #000;
+    --bs-pagination-border-color: #198754;
+    --bs-pagination-focus-color: #198754;
+    --bs-pagination-hover-color: #fff;
+    --bs-pagination-hover-bg: #198754;
+
+    .page-link {
+        padding: 6px 12px;
+        text-align: center;
+    }
+}
+
+.navigate {
+    --bs-pagination-color: #198754;
+
+    .page-link {
+        padding: 6px 8px;
+    }
+}

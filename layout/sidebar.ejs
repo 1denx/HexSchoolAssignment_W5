@@ -2,8 +2,7 @@
     <div class="sidebar-content">
         <div class="logo ps-8 mb-8">
             <h1 class="m-0">
-                <a href="./index.html" class="navbar-brand"><img src="../assets/images/logo-ANSWER.svg"
-                        alt="Answer logo">
+                <a href="#" class="navbar-brand"><img src="../assets/images/logo-ANSWER.svg" alt="Answer logo">
                 </a>
             </h1>
         </div>
@@ -12,37 +11,41 @@
                 <li class="nav-item mb-5 px-8">
                     <a href="#" class="nav-link d-flex ps-0">
                         <span class="nav-icon material-symbols-outlined me-3">insert_chart</span>
-                        <span class="nav-item-title">Dashboard</span>
+                        <span class="nav-item-title fw-bold">Dashboard</span>
                     </a>
                 </li>
                 <li class="nav-item mb-5 px-8">
                     <a href="#" class="nav-link d-flex ps-0">
                         <span class="nav-icon material-symbols-outlined me-3">forum</span>
-                        <span class="nav-item-title">Qusetion</span>
+                        <span class="nav-item-title fw-bold">Qusetion</span>
                     </a>
                 </li>
-                <li class="nav-item mb-5 px-8 active" aria-current="page">
-                    <a href="#" class="nav-link active d-flex ps-0">
+                <li
+                    class="nav-item mb-5 px-8 <%= page === 'assignment' ? 'text-success border-start border-4 border-success' : 'text-gray-900' %>">
+                    <a href="./assignment.html"
+                        class="nav-link d-flex ps-0 <%= page === 'assignment' ? 'text-success' : 'text-gray-900' %>">
                         <span class="nav-icon material-symbols-outlined me-3">assignment</span>
-                        <span class="nav-item-title">Assignment</span>
+                        <span class="nav-item-title fw-bold">Assignment</span>
                     </a>
                 </li>
                 <li class="nav-item mb-5 px-8">
                     <a href="#" class="nav-link d-flex ps-0">
                         <span class="nav-icon material-symbols-outlined me-3">video_library</span>
-                        <span class="nav-item-title">Course</span>
+                        <span class="nav-item-title fw-bold">Course</span>
                     </a>
                 </li>
-                <li class="nav-item mb-5 px-8">
-                    <a href="#" class="nav-link d-flex ps-0">
+                <li
+                    class="nav-item mb-5 px-8 <%= page === 'admin' ? 'text-success border-start border-4 border-success' : 'text-gray-900' %>">
+                    <a href="./admin.html"
+                        class="nav-link d-flex ps-0 <%= page === 'admin' ? 'text-success' : 'text-gray-900' %>">
                         <span class="nav-icon material-symbols-outlined me-3">group</span>
-                        <span class="nav-item-title">Admin</span>
+                        <span class="nav-item-title fw-bold">Admin</span>
                     </a>
                 </li>
                 <li class="nav-item mb-5 px-8">
                     <a href="#" class="nav-link d-flex ps-0">
                         <span class="nav-icon material-symbols-outlined me-3">settings</span>
-                        <span class="nav-item-title">Settings</span>
+                        <span class="nav-item-title fw-bold">Settings</span>
                     </a>
                 </li>
             </ul>
@@ -51,7 +54,7 @@
     <div class="user d-flex align-items-center ps-8 me-20">
         <img class="user-pic rounded-circle me-4" src="../assets/images/andychen.jpeg" alt="Andy個人照">
         <div class="user-info">
-            <p class="user-name mb-1">Andy Chen</p>
+            <p class="user-name fw-bold mb-1">Andy Chen</p>
             <p class="user-email mb-0">andy0401@mail.com</p>
         </div>
     </div>

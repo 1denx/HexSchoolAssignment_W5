@@ -504,6 +504,7 @@ $border-color-translucent: rgba($black, .175) !default;
 
 // scss-docs-start border-radius-variables
 $border-radius: .375rem !default;
+$border-radius-xs: .125rem !default;
 $border-radius-sm: .25rem !default;
 $border-radius-lg: .5rem !default;
 $border-radius-xl: 1rem !default;
@@ -706,7 +707,7 @@ $table-active-bg: rgba($black, $table-active-bg-factor) !default;
 
 $table-hover-color: $table-color !default;
 $table-hover-bg-factor: .075 !default;
-$table-hover-bg: rgba($black, $table-hover-bg-factor) !default;
+$table-hover-bg: $gray-100 !default; //rgba($black, $table-hover-bg-factor) !default; adjust
 
 $table-border-factor: .1 !default;
 $table-border-width: $border-width !default;

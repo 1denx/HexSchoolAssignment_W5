@@ -1,27 +1,6 @@
-.nav-item {
-    &.active {
-        border-left: 4px solid $success;
-    }
-
-    .nav-link {
-        &.active {
-            color: $success;
-        }
-    }
-}
-
-.nav-item-title {
-    font-weight: 700;
-}
-
 .user-pic {
     width: 40px;
     height: 40px;
-}
-
-.user-name {
-    color: $dark;
-    font-weight: bold;
 }
 
 .user-email {
