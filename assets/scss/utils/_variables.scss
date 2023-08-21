@@ -909,12 +909,12 @@ $form-check-input-bg: $input-bg !default;
 $form-check-input-border: 1px solid rgba($black, .25) !default;
 $form-check-input-border-radius: .25em !default;
 $form-check-radio-border-radius: 50% !default;
-$form-check-input-focus-border: $input-focus-border-color !default;
+$form-check-input-focus-border: $success !default; //$input-focus-border-color !default;
 $form-check-input-focus-box-shadow: $input-btn-focus-box-shadow !default;
 
 $form-check-input-checked-color: $component-active-color !default;
-$form-check-input-checked-bg-color: $component-active-bg !default;
-$form-check-input-checked-border-color: $form-check-input-checked-bg-color !default;
+$form-check-input-checked-bg-color: $success !default; //$component-active-bg !default;
+$form-check-input-checked-border-color: $success !default; //$form-check-input-checked-bg-color !default;
 $form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>") !default;
 $form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>") !default;
 
@@ -1240,7 +1240,7 @@ $pagination-focus-outline: 0 !default;
 
 $pagination-hover-color: var(--#{$prefix}link-hover-color) !default;
 $pagination-hover-bg: $gray-200 !default;
-$pagination-hover-border-color: $gray-300 !default;
+$pagination-hover-border-color: $success !default; //$gray-300 !default;
 
 $pagination-active-color: $component-active-color !default;
 $pagination-active-bg: $component-active-bg !default;

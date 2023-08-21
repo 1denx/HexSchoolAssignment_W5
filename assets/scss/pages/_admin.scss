@@ -12,10 +12,8 @@
 }
 
 .modal-pic {
-    width: 141px;
-    height: 100%;
+    max-width: 141px;
     object-fit: cover;
-    object-position: center center;
 }
 
 .user-name {
@@ -30,6 +28,10 @@
 .verified-date {
     font-size: $font-size-sm;
     margin-bottom: 18px;
+}
+
+.modal-body .submit-txt {
+    color: $gray-400;
 }
 
 .block-title {

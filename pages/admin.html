@@ -166,33 +166,46 @@
             <div class="modal fade" id="visibility-modal" data-bs-backdrop="static" data-bs-keyboard="false"
                 tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content d-flex flex-row p-8 rounded-0">
+                    <div class="modal-content p-8 rounded-0">
 
-                        <div class="modal-side">
-                            <img class="modal-pic pe-6" src="../assets/images/emir.jpeg" alt="Emir Wicks-pic">
+                        <div class="modal-body d-flex p-0">
+                            <img class="modal-pic me-6" src="../assets/images/emir.jpeg" alt="Emir Wicks-pic">
+                            <div class="flex-grow-1">
+                                <div class="body-header d-flex justify-content-between">
+                                    <span class="mb-2">#1</span>
+                                    <button type="button" class="btn-close text-end" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="body-main">
+                                    <p class="my-0">Admin</p>
+                                    <p class="user-name fw-bold mb-2">Emir Wicks</p>
+                                    <p class="user-email">emir.wicks@mail.com</p>
+                                </div>
+                                <div class="body-footer d-flex justify-content-between align-items-center">
+                                    <span class="d-block py-1 px-2 bg-light">Verified</span>
+                                    <button class="btn p-0" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse">
+                                        <span class="material-symbols-outlined fw-bold text-success">
+                                            expand_more
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="modal-body d-flex flex-column justify-content-between p-0">
-                            <div class="body-header d-flex justify-content-between">
-                                <span class="mb-2">#1</span>
-                                <button type="button" class="btn-close text-end" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="body-main">
-                                <p class="my-0">Admin</p>
-                                <p class="user-name fw-bold mb-2">Emir Wicks</p>
-                                <p class="user-email">emir.wicks@mail.com</p>
-                            </div>
-                            <div class="body-footer d-flex justify-content-between align-items-center">
-                                <button class="btn btn-sm btn-light">Verified</button>
-                                <span class="material-symbols-outlined">
-                                    expand_more
-                                </span>
+                        <div class="collapse mt-8" id="collapse">
+                            <div class="accordion-body d-flex justify-content-end">
+                                <button class="btn rounded-0 btn-outline-danger py-2 px-8" data-bs-dismiss="modal"
+                                    aria-label="Close">Deactivate</button>
+                                <button class="btn rounded-0 btn-success py-2 px-8 ms-4">Edit</button>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
+
+
+
+
             <!-- edit-modal -->
             <div class="modal fade" id="edit-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -226,46 +239,48 @@
                                 </div>
                                 <time class="verified-date">2020/4/12</time>
                             </div>
-                            <input type="email" class="form-control text-center py-4 mb-6"
-                                placeholder="Send Verification Mail">
+                            <input type="submit" class="submit-txt form-control text-center fw-bold rounded-0 py-4 mb-6"
+                                value="Send Verification Mail">
 
                             <h5 class="block-title fw-bold pt-6 mb-5">Access Level</h5>
-                            <select class="form-select mb-5" aria-label="Default select example">
-                                <option selected>Admin</option>
-                                <option value="1">Level One</option>
-                                <option value="2">Level Two</option>
-                                <option value="3">Level Three</option>
-                            </select>
+                            <form>
+                                <select class="form-select mb-5" aria-label="Default select example">
+                                    <option selected>Admin</option>
+                                    <option value="1">Level One</option>
+                                    <option value="2">Level Two</option>
+                                    <option value="3">Level Three</option>
+                                </select>
+                            </form>
 
                             <h5 class="block-title fw-bold pt-6 mb-5">Custom Access</h5>
                             <form class="mb-5">
                                 <div class="form-check mb-4">
-                                    <input class="form-check-input" type="checkbox" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" id="lectureCheck">
+                                    <label class="form-check-label" for="lectureCheck">
                                         Lecture
                                     </label>
                                 </div>
                                 <div class="form-check mb-4">
-                                    <input class="form-check-input" type="checkbox" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" id="couponCheck">
+                                    <label class="form-check-label" for="couponCheck">
                                         Coupon
                                     </label>
                                 </div>
                                 <div class="form-check mb-4">
-                                    <input class="form-check-input" type="checkbox" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" id="messageCheckDefault">
+                                    <label class="form-check-label" for="messageCheckDefault">
                                         Message
                                     </label>
                                 </div>
                                 <div class="form-check mb-4">
-                                    <input class="form-check-input" type="checkbox" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" id="settingCheck">
+                                    <label class="form-check-label" for="settingCheck">
                                         Setting
                                     </label>
                                 </div>
                                 <div class="form-check mb-4">
-                                    <input class="form-check-input" type="checkbox" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" id="taskCheck">
+                                    <label class="form-check-label" for="taskCheck">
                                         Task Menu
                                     </label>
                                 </div>
